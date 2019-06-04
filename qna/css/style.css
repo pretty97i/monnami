@@ -1,0 +1,671 @@
+@charset "utf-8";
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800');
+
+/*Layer*/
+/* body{width:100%}
+#wrap{width:100%}
+#header{}
+#container{overflow:hidden;width:100%;margin-top:148px;padding-bottom:150px;}
+
+*/
+#contents{margin-top: 0px; margin-bottom: 0px; }
+/* #footer{width:100%;} */
+
+
+
+
+
+/* 공통 */
+.pagetitle{
+	width:100%;height:342px;
+	text-align:center;
+	background:url(/study/monnami/qna/images/visual4.jpg) no-repeat center;
+}
+.pagetitle h2{padding-top:120px;font-size:34px;color:#fff;font-weight:500;}
+.pagetitle h2:after{
+	display:block;
+	content:"";
+	width:30px;height:4px;
+	margin:5px auto 10px;
+	background:#c40f39;
+}
+.pagetitle p{font-size:15px;color:#fff;font-weight:300;}
+.pn1{background:url(/study/monnami/qna/images/page_visual1.jpg) no-repeat center;}
+.pn2{background:url(/study/monnami/qna/images/page_visual2.jpg) no-repeat center;}
+.pn3{background:url(/study/monnami/qna/images/page_visual3.jpg) no-repeat center;}
+.pn4{background:url(/study/monnami/qna/images/visual4.jpg) no-repeat center;}
+.pn5{background:url(/study/monnami/qna/images/page_visual5.jpg) no-repeat center;}
+.pn6{background:url(/study/monnami/qna/images/page_visual6.jpg) no-repeat center;}
+.pn7{background:url(/study/monnami/qna/images/page_visual2.jpg) no-repeat center;}
+
+ .pagetabs{
+	position:relative;
+	max-width:1400px;
+	width:100%;
+	margin:-29px auto 85px;
+	border:1px solid rgba(0,0,0,0.1);
+} 
+ .pagetabs ul{
+	overflow:hidden;
+	background:#fff;
+} 
+.pagetabs ul li{float:left;}
+.pagetabs ul li a{
+	display:block;
+	height:58px;line-height:58px;
+	text-align:center;
+	font-size:15px;color:#666;
+	background:#fff;
+	border-right:1px solid #ddd;
+}
+.pagetabs ul li.on a{color:#fff;background:#c40f39;}
+.pagetabs ul li:last-child a{border-right:0}
+
+.pagetabs ul.m1 li{width:200px;}
+.pagetabs ul.m2 li{width:233px;}
+.pagetabs ul.m2 li:last-child{width:235px;}
+.pagetabs ul.m4 li{width:350px;}
+.pagetabs ul.m5 li{width:50%;}
+
+@media(max-width:1420px){
+
+.pagetabs ul.m1 li{width:14.285%;}
+.pagetabs ul.m2 li{width:16.666%;}
+.pagetabs ul.m2 li:last-child{width:16.666%;}
+.pagetabs ul.m4 li{width:25%;}
+.pagetabs ul.m5 li{width:50%;}
+
+}
+
+
+.title2{
+	font-family: 'Montserrat', sans-serif;
+	font-size:38px;font-weight:600;color:#000;
+	text-align:center;letter-spacing:2px;
+}
+.title2:after{
+	display:block;
+	content:"";
+	width:30px;height:4px;
+	margin:5px auto 95px;
+	background:#c40f39;
+}
+.title2 span{color:#c40f39;}
+
+
+
+.title1{
+	font-family: 'Montserrat', sans-serif;
+	font-size:38px;font-weight:600;color:#000;
+	text-align:center;letter-spacing:2px;
+}
+.title1:after{
+	display:block;
+	content:"";
+	width:30px;height:4px;
+	margin:5px auto 95px;
+	background:#c40f39;
+}
+.title1 span{color:#c40f39;}
+
+
+.subcate{text-align:center;}
+.subcate li{
+	display:inline-block;
+	width:130px;
+	margin:0 7px;
+}
+.subcate li a{
+	display:block;
+	text-align:center;
+	height:32px;line-height:32px;font-weight:500;
+	font-size:15px;color:#777;border-bottom:2px solid #dcdcdc;
+}
+.subcate li.on a{
+	display:block;
+	text-align:center;
+	height:32px;line-height:32px;
+	font-size:15px;color:#c40f39;border-bottom:2px solid #c40f39;
+}
+
+
+.paging{margin:60px 0;text-align:center;}
+.paging a{
+	display:inline-block;vertical-align:top;
+	width:38px;height:38px;
+	text-align:center;line-height:38px;
+	font-family: 'Montserrat', sans-serif;
+	font-size:15px;color:#a8a8a8;
+	border:1px solid #ddd;
+}
+.paging strong{
+	display:inline-block;vertical-align:top;
+	width:38px;height:38px;
+	text-align:center;line-height:38px;
+	font-family: 'Montserrat', sans-serif;
+	font-size:15px;color:#c40f39;font-weight:500;
+	border:1px solid #c40f39;
+}
+.paging a.page_prev{margin-right:30px;}
+.paging a.page_next{margin-left:30px;}
+
+.br{display:block;}
+
+
+
+
+
+
+/* 게시판 뷰페이지 */
+.bbs_view{
+	max-width:1400px;
+	width:100%;
+	margin:0 auto;
+	border-top:2px solid #000;
+}
+.bbs_view th{
+	padding:25px 0;
+	border-bottom:1px solid #ddd;
+}
+.bbs_view th .sbj{font-size:27px;color:#000;margin-bottom:5px;}
+.bbs_view th .sbj span{color:#c40f39;}
+.bbs_view th .date{font-size:14px;}
+.bbs_view th .date span{display:inline-block;vertical-align:top;}
+.bbs_view th .date .tit{color:#858585;margin-right:6px;}
+.bbs_view th .date .line{color:#434343;margin:0 10px;}
+.bbs_view td.viewcon{
+	padding:30px;
+	border-bottom:1px solid #b2b2b2;
+}
+
+.comment{
+	max-width:1400px;
+	width:100%;
+	margin:0 auto;
+}
+.comment .title{margin:25px 0 10px;font-size:18px;color:#000;}
+.comment_write{padding-bottom:50px;border-bottom:1px solid #ddd;}
+.comment_write .privacy{
+	border:1px solid #ddd;
+	background:#f6f6f6;
+	padding:30px 25px;
+	margin-bottom:5px;
+}
+.comment_write .privacy .textarea{
+	overflow-y:scroll;
+	width:96%;height:200px;
+	padding:20px 2%;
+	border:1px solid #ddd;
+	background:#fff;
+}
+.comment_write .privacy .textarea .tit{font-size:17px;color:#333;margin-bottom:20px;}
+.comment_write .privacy .textarea textarea{
+	width:100%;height:3300px;overflow:hidden;
+	font-size:14px;line-height:180%;
+	border:0;outline:0;
+}
+.comment_write .privacy .chkarea{margin-top:10px;font-size:15px;color:#333;}
+.comment_write .privacy .chkarea input{width:17px;height:17px;background:0;border:1px solid #ddd;}
+.comment_write .formarea{
+	border:1px solid #ddd;
+	background:#f6f6f6;
+	padding:30px 25px;
+	margin-bottom:5px;
+}
+.comment_write .formarea table{width:100%;}
+.comment_write .formarea table th{
+	text-align:left;vertical-align:top;
+	width:75px;
+	font-size:14px;color:#333;font-weight:500;
+	padding:8px 0;
+}
+.comment_write .formarea table th span{color:#c40f39;vertical-align:middle;display:inline-block;}
+.comment_write .formarea table td{
+	padding:2.5px 0;
+}
+.comment_write .formarea table td .ipt{
+	border:1px solid #ddd;
+	outline:0;
+	width:204px;height:34px;
+	padding:0 10px;font-size:14px;
+}
+.comment_write .formarea table td textarea{
+	border:1px solid #ddd;
+	outline:0;
+	width:1269px;height:88px;
+	padding:10px;font-size:14px;
+	resize:none;
+}
+.comment_write .formarea table td .btnarea{
+	overflow:hidden;
+	width:1289px;
+	border:1px solid #ddd;border-top:0;
+	background:#fff;
+	height:42px;line-height:42px;
+}
+.comment_write .formarea table td .btnarea p{
+	float:left;padding:0 20px;color:#a9a9a9;
+}
+.comment_write .formarea table td .btnarea a{
+	float:right;
+	width:110px;height:42px;line-height:42px;
+	text-align:center;
+	color:#fff;background:#c40f39;
+}
+.comment_write .formarea table td .btnarea div{float:right;margin-right:20px;color:#a9a9a9;}
+
+.comment_list{
+	padding-top:40px;
+}
+.comment_list .total{font-size:14px;color:#929292;}
+.comment_list .total span{color:#c40f39;}
+.comment_list table{margin:5px 0 0;width:100%;border-top:2px solid #ddd;}
+.comment_list table td{
+	padding:25px 0;
+	border-bottom:1px solid #ddd;
+}
+.comment_list table td.name{
+	width:119px;
+	background:url(/images/page/comment_line.gif) no-repeat right center;
+	font-size:14px;color:#333;
+	text-align:center;
+}
+.comment_list table td.txtarea{position:relative;}
+.comment_list table td.txtarea .txt{padding:0 50px;}
+.comment_list table td.txtarea .btns{position:absolute;right:0;top:20px;}
+.comment_list table td.txtarea .btns a{
+	display:inline-block;
+	width:43px;height:29px;
+	text-align:center;line-height:29px;
+	border:1px solid #c40f39;color:#c40f39;
+	font-size:14px;
+}
+.comment_list table td.date{width:100px;text-align:center;color:#989898;}
+
+
+.view_btns{
+	max-width:1400px;
+	width:100%;
+	margin:17px auto;
+	text-align:center;
+	position:relative;
+}
+.view_btns>a{
+	display:inline-block;
+	width:143px;height:40px;
+	text-align:center;line-height:40px;
+	font-family:'Montserrat';font-size:15px;
+	color:#fff;
+	background:#c40f39;
+}
+.view_btns .view_page{
+	position:absolute;right:0;top:0;
+}
+
+
+
+@media(max-width:1450px){
+
+	.bbs_view{
+		max-width:1400px;
+		width:94%;
+		margin:0 auto;
+		border-top:2px solid #000;
+	}
+	.view_btns{
+		max-width:1400px;
+		width:94%;
+		margin:17px auto;
+		text-align:center;
+		position:relative;
+	}
+
+	.comment{
+		max-width:1400px;
+		width:94%;
+		margin:0 auto;
+	}
+	.comment_write .formarea table td textarea{
+		border:1px solid #ddd;
+		outline:0;
+		width:93.9%;height:88px;
+		padding:10px 3%;font-size:14px;
+		resize:none;
+	}
+	.comment_write .formarea table td .btnarea{
+		overflow:hidden;
+		width:100%;
+		border:1px solid #ddd;border-top:0;
+		background:#fff;
+		height:42px;line-height:42px;
+	}
+
+}
+
+
+
+
+
+/* faq 자주하는질문 */
+.faq2{width:700px;margin: 100px; padding-left: 520px; }
+.faq_box2{
+	border:1px solid #ddd;
+	background:#fff;
+	padding:20px 50px 8px 43px;
+	margin-top:0px;
+	margin-bottom:0spx;
+	cursor:pointer;
+
+}
+.faq_box2.on2{
+	border:1px solid #ddd;
+	background:#f8f8f8;
+	padding:20px 50px 8px 43px;
+	margin-bottom:5px;
+	cursor:pointer;
+}
+.faq_box2 .qustion2{
+	padding-top:0px;
+	padding-left:60px;
+	background:url(/study/monnami/qna/images/faq_q.png) no-repeat left top;
+}
+.btn-whitegray2 {
+    display: inline-block;
+    padding: 0 40px;
+    height: 40px;
+    line-height: 38px;
+    font-size: 16px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    text-align: center;
+    color: #666;
+    border-radius: 3px;
+    margin-left: 270px;
+    margin-top: 10px;
+}
+
+
+
+/*  .faq_box2 .qustion2 a{
+	display:block;
+	position:relative;
+	font-size:16px;color:#333;font-weight:400;
+	padding-bottom:15px;
+}
+
+.faq_box2.on2 .qustion2 a{
+	display:block;
+	position:relative;
+	font-size:16px;color:#c40f39;font-weight:500;
+	padding-bottom:15px;
+}
+.faq_box2 .qustion2 a .arr{
+	position:absolute;right:0;top:0px;
+	width:15px;height:15px;
+	border-top:2px solid #aaa;
+	border-right:2px solid #aaa;
+	transform:rotateZ(130deg) skew(-9deg);
+	transition:all 0.3s;
+}
+.faq_box2.on .qustion a .arr{
+	position:absolute;right:0;top:10px;
+	width:15px;height:15px;
+	border-top:2px solid #aaa;
+	border-right:2px solid #aaa;
+	transform:rotateZ(309deg) skew(-9deg);
+	transition:all 0.3s;
+} */
+.faq_box2 .answer2{
+	display:none;
+	padding:15px 0 0 60px;
+	border-top:1px solid #dedede;
+} 
+.faq_box2 .answer2 p{margin-bottom:25px;font-size:14.5px;color:#666;line-height:200%;}
+.faq_box2 .answer2 .dot{display:block;padding-left:13px;background:url(/study/monnami/qna/images/list_bg4.gif) no-repeat left 12px;}
+.faq_box2 .answer2 ul{margin-bottom:25px;}
+.faq_box2 .answer2 ul li{
+	font-size:14px;color:#666;line-height:200%;
+	padding-left:14.5px;background:url(/study/monnami/qna/images/list_bg4.gif) no-repeat left 12px;
+}
+.faq_box2 .answer2 .numtitle{display:block;}
+.faq_box2 .answer2 .numtitle span{
+	display:inline-block;
+	width:19px;height:19px;
+	padding:0 2px;
+	text-align:center;line-height:19px;
+	font-family:'Montserrat';font-size:14.5px;color:#fff;
+	background:#c40f39;margin-right:5px;
+}
+
+
+
+
+
+/* faq 서라가 바꾼거  */
+.faq{width:1400px; margin-top: 0px; margin-bottom: 500px; }
+.faq_box{
+	border:1px solid #ddd;
+	background:#fff;
+	padding:20px 50px 8px 43px;
+	margin-top:0px;
+	margin-bottom:5px;
+	cursor:pointer;
+	margin-left: 600px;
+}
+.faq_box.on{
+	border:1px solid #ddd;
+	background:#f8f8f8;
+	padding:20px 50px 8px 43px;
+	margin-bottom:5px;
+	cursor:pointer;
+}
+.faq_box .qustion{
+	padding-top:0px;
+	padding-left:60px;
+	background:url(/study/monnami/qna/images/faq_q.png) no-repeat left top;
+}
+.faq_box .qustion a{
+	display:block;
+	position:relative;
+	font-size:16px;color:#333;font-weight:400;
+	padding-bottom:15px;
+}
+.faq_box.on .qustion a{
+	display:block;
+	position:relative;
+	font-size:16px;color:#c40f39;font-weight:500;
+	padding-bottom:15px;
+}
+.faq_box .qustion a .arr{
+	position:absolute;right:0;top:0px;
+	width:15px;height:15px;
+	border-top:2px solid #aaa;
+	border-right:2px solid #aaa;
+	transform:rotateZ(130deg) skew(-9deg);
+	transition:all 0.3s;
+}
+.faq_box.on .qustion a .arr{
+	position:absolute;right:0;top:10px;
+	width:15px;height:15px;
+	border-top:2px solid #aaa;
+	border-right:2px solid #aaa;
+	transform:rotateZ(309deg) skew(-9deg);
+	transition:all 0.3s;
+}
+.faq_box .answer{
+	display:none;
+	padding:15px 0 0 60px;
+	border-top:1px solid #dedede;
+}
+.faq_box .answer p{margin-bottom:25px;font-size:14.5px;color:#666;line-height:200%;}
+.faq_box .answer .dot{display:block;padding-left:13px;background:url(/study/monnami/qna/images/list_bg4.gif) no-repeat left 12px;}
+.faq_box .answer ul{margin-bottom:25px;}
+.faq_box .answer ul li{
+	font-size:14px;color:#666;line-height:200%;
+	padding-left:14.5px;background:url(/study/monnami/qna/images/list_bg4.gif) no-repeat left 12px;
+}
+.faq_box .answer .numtitle{display:block;}
+.faq_box .answer .numtitle span{
+	display:inline-block;
+	width:19px;height:19px;
+	padding:0 2px;
+	text-align:center;line-height:19px;
+	font-family:'Montserrat';font-size:14.5px;color:#fff;
+	background:#c40f39;margin-right:5px;
+}
+
+
+
+@media(max-width:1450px){
+
+	.faq{width:94%;margin:0 auto;word-break:keep-all;}
+	.faq .br{display:none;}
+
+}
+
+
+
+
+/* inquiry 문의하기 */
+.inquiry{}
+.inquiry .bgarea{}
+.inquiry .contactus{
+	width:1200px;height:850px;
+	margin:0 auto;
+	padding:95px 100px 0;
+	background:url(/study/monnami/qna/images/inquiry_bg.jpg) no-repeat;
+}
+.inquiry .contactus h4{margin-bottom:35px;font-family:'Montserrat';font-size:36px;color:#fff;}
+.inquiry .contactus .formarea{overflow:hidden;}
+.inquiry .contactus .formarea .fl{float:left;width:572px;}
+.inquiry .contactus .formarea .fl>div{margin-bottom:15px;}
+.inquiry .contactus .formarea .fl div#select_box {
+    position:relative;
+    width:100%;
+    height:58px;
+    background:rgba(255,255,255,0.8) url(/study/monnami/qna/images/select_arrow.png) 95% center no-repeat; /* 화살표 이미지 */
+    border:1px solid #b7b6b5;
+}
+.inquiry .contactus .formarea .fl div#select_box label {
+    position: absolute;
+    font-size:15px;
+    top:17px;
+    left:4%;
+	color:#777;
+}
+.inquiry .contactus .formarea .fl select{
+    width:100%;
+    height:58px;
+    min-height:58px;
+    line-height:58px;
+    padding:0%;
+    opacity:0;
+    filter: alpha(opacity=0); /* IE 8 */
+}
+.inquiry .contactus .formarea .fl input[type="text"]{
+	width:92%;
+	padding:0 4%;
+	height:58px;line-height:58px;
+	outline:0;
+	background:rgba(255,255,255,0.8);
+	border:1px solid #b7b6b5;
+	font-size:15px;
+}
+.inquiry .contactus .formarea .fl textarea{
+	width:92%;
+	padding:20px 4%;
+	height:76px;
+	outline:0;
+	background:rgba(255,255,255,0.8);
+	border:1px solid #b7b6b5;
+	font-size:15px;
+	resize:none;
+}
+.filebox label{
+	display:inline-block;
+	width:92%;
+	padding:20px 4%;
+	vertical-align: middle;
+	background:rgba(255,255,255,0.8) url(/study/monnami/qna/images/file_upload.gif) 96% center no-repeat;
+	cursor: pointer;
+	border:1px solid #b7b6b5;
+	font-size:15px;color:#777;
+}
+.filebox input[type="file"] { /* 파일 필드 숨기기 */
+	position: absolute; width: 1px; height: 1px;
+	padding: 0; margin: -1px;
+	overflow: hidden;
+	clip:rect(0,0,0,0);
+	border: 0;
+}
+.filebox .upload-name {
+	display:none;
+	padding:20px 4%;	 /* label의 패딩값과 일치 */
+	font-size: inherit;
+	font-family: inherit;
+	line-height: normal;
+	vertical-align: middle;
+	background-color: #f5f5f5;
+	border: 1px solid #ebebeb;
+	border-bottom-color: #e2e2e2;
+	border-radius: .25em;
+	-webkit-appearance: none; /* 네이티브 외형 감추기 */
+	-moz-appearance: none;
+	appearance: none;
+}
+
+.ie9_tit{position:relative;}
+.ie9_tit label{
+	position:absolute;left:4.1%;top:19px;;
+	font-size:15px;color:#777;
+}
+
+
+
+.inquiry .contactus .formarea .fr{float:right;width:592px;}
+.inquiry .contactus .formarea .fr .textarea{
+	overflow-y:scroll;
+	width:92%;height:500px;
+	padding:20px 4%;
+	background:rgba(255,255,255,0.8);
+	font-size:14px;line-height:180%;
+}
+.inquiry .contactus .formarea .fr .textarea .tit{font-size:16px;margin-bottom:10px;color:#000;}
+.inquiry .contactus .formarea .fr .textarea textarea{
+	width:100%;
+	height:2150px;;
+	border:0;outline:0;
+	background:0;
+	resize:none;word-break:keep-all;
+	overflow-y:hidden;
+}
+
+.inquiry .contactus .formarea .fr .chkarea{
+	margin-top:10px;
+	font-size:15px;color:#fff;font-weight:300;
+}
+.inquiry .contactus .formarea .fr .chkarea input{
+	width:15px;height:15px;
+	background:none;
+}
+.btn_send{margin:50px 0 0;text-align:center;}
+.btn_send a{
+	display:inline-block;
+	width:380px;height:60px;
+	text-align:center;line-height:60px;
+	font-family:'Montserrat';
+	font-size:20px;
+	background:rgba(255,255,255,0.8);
+	color:#c40f39;
+	transition:all .3s;
+}
+.btn_send a:hover{
+	background:#c40f39;
+	color:#fff;
+	transition:all .3s;
+}
+
+
+

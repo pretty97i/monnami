@@ -1,0 +1,98 @@
+@CHARSET "UTF-8";
+
+*{
+	
+	margin: 0px;
+	padding: 0px;
+	
+	
+	
+}
+
+body{
+	
+	scrollbar-face-color:#ffffff;
+	font-size: 9pt;
+	font-family: 돋움;
+	
+	
+}
+
+a{
+	
+	cursor: hand;
+	color: #000000;
+	text-decoration: none;
+	font-size: 9pt;
+	line-height: 150%;
+		
+	
+}
+
+a:HOVER,a:ACTIVE{
+	
+	font-size: 9pt;
+	color: #f28011;
+	text-decoration: uderline;	/* 마우스를 올렸을때 밑줄이 가게만들어줌 */
+	
+	
+	
+}
+
+ul{
+	
+	list-style: none;		
+	
+	
+}
+
+td{
+	
+	font-size: 9pt;
+	
+	
+}
+
+.btn1{
+	font-size: 9pt;
+	color: rgb(0,0,0);
+	background-color: rgb(245,245,245);
+	line-height: 16px;
+	
+}
+.btn2{
+	
+	color: #000000;
+	font: nomal 9pt '굴림','trebuchet ms',helvetica,san-serif;
+	background-color: #e4e4e4;
+	border-color: #696 #363 #363 #696;
+	line-height: 16px;
+	filter: progid:DXImageTransform.Microsoft.Gradient(GradientType=0,StartColorStr='#ffffff', EndColorStr='#ffeeddaa');				/* 그라데이션 색깔  앞에#ff=투명도 */
+	padding: 1px 6px 1px 6px;
+	
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
